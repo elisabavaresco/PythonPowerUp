@@ -7,6 +7,11 @@ Passo 1: Entrar no sistema da empresa - https://dlp.hashtagtreinamentos.com/pyth
     Abrir o Chrome
     Digitar o site
 Passo 2: Fazer login
+    Clicar no campo de email
+    Escrever o email
+    Clicar no campo de senha
+    Escrever a senha
+    Clicar no botão de login
 Passo 3: Importar a base de dados
 Passo 4: Cadastrar 1 produto
 Passo 5: Repetir para todos os produtos
@@ -18,5 +23,5 @@ pyautogui -> uma das bibliotecas que vamos utilizar nesse projeto é a 'pyautogu
     pyautogui.write -> escrever um texto
     pyautogui.hotkey -> apertar uma combinação de teclas
     pyautogui.PAUSE -> para dar um daley entre as tarefas
-
+time -> biblioteca para controle de tempo do código
 """
