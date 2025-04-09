@@ -29,4 +29,4 @@ pyautogui.write('exemplo@gmail.com')
 pyautogui.press('tab')
 # digitar no campo de senha
 pyautogui.write('exemplosenha')
-pyautogui.press('enter')
+pyautogui.press('enter') # para 'clilcar' no botão logar
