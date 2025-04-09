@@ -1,6 +1,7 @@
 import pyautogui
 
-# abrir o Chrome no Mac
+# abrir o Safari no Mac
 pyautogui.hotkey('command','space')
 pyautogui.write('safari')
 pyautogui.press('enter')
+

@@ -4,6 +4,8 @@ Este é um projeto de automação de tarefas, mais especificamente, automação 
 
 Lógica:
 Passo 1: Entrar no sistema da empresa - https://dlp.hashtagtreinamentos.com/python/intensivao/login
+    Abrir o Chrome
+    Digitar o site
 Passo 2: Fazer login
 Passo 3: Importar a base de dados
 Passo 4: Cadastrar 1 produto
@@ -14,4 +16,5 @@ pyautogui -> uma das bibliotecas que vamos utilizar nesse projeto é a 'pyautogu
     pyautogui.click -> clicar em algum lugar
     pyautogui.press -> apertar 1 tecla
     pyautogui.write -> escrever um texto
+
 """
