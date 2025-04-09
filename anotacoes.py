@@ -16,5 +16,7 @@ pyautogui -> uma das bibliotecas que vamos utilizar nesse projeto é a 'pyautogu
     pyautogui.click -> clicar em algum lugar
     pyautogui.press -> apertar 1 tecla
     pyautogui.write -> escrever um texto
+    pyautogui.hotkey -> apertar uma combinação de teclas
+    pyautogui.PAUSE -> para dar um daley entre as tarefas
 
 """
