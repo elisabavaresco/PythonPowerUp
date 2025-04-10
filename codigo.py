@@ -1,11 +1,15 @@
 import pyautogui
 import time
+import pandas
 
 pyautogui.PAUSE = 0.5 # adicionando um dalay entre as tarefas
 
 # Passo 1: Entrar no sistema da empresa
 # abrir o Safari no Mac
 pyautogui.hotkey('command','space')
+# posição da lupa na tela: x=3884, y=14
+# pyautogui.click(3884, 14)
+time.sleep(2)
 pyautogui.write('safari')
 pyautogui.press('enter')
 
@@ -31,5 +35,21 @@ pyautogui.press('tab')
 pyautogui.write('exemplosenha')
 pyautogui.press('enter') # para 'clilcar' no botão logar
 
-# esperar 3 segundos 
+# esperar 3 segundos
 time.sleep(3)
+
+# Passo 3: Importar a base de dados
+tabela = pandas.read_csv('produtos.csv') # se o arquivo estiver em outro local, é preciso passar o 'endereço completo'
+
+# Passo 4: Cadastrar 1 produto safari
+
+
+
+
+
+
+
+
+
+
+
