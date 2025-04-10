@@ -30,3 +30,6 @@ pyautogui.press('tab')
 # digitar no campo de senha
 pyautogui.write('exemplosenha')
 pyautogui.press('enter') # para 'clilcar' no botão logar
+
+# esperar 3 segundos 
+time.sleep(3)
