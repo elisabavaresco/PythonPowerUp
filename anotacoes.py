@@ -23,6 +23,7 @@ pyautogui -> uma das bibliotecas que vamos utilizar nesse projeto é a 'pyautogu
     pyautogui.write -> escrever um texto
     pyautogui.hotkey -> apertar uma combinação de teclas
     pyautogui.PAUSE -> para dar um daley entre as tarefas
+    pyautogui.scroll(x) -> para scrollar a página (-x para baixo, x para cima)
 time -> biblioteca para controle de tempo do código
 pandas -> pacote para nos ajudar a importar base de dados (seja base de dados em csv, excel, html, json, sas, etc)
 """

@@ -6,9 +6,9 @@ pyautogui.PAUSE = 0.5 # adicionando um dalay entre as tarefas
 
 # Passo 1: Entrar no sistema da empresa
 # abrir o Safari no Mac
-pyautogui.hotkey('command','space')
+# pyautogui.hotkey('command','space')
 # posição da lupa na tela: x=3884, y=14
-# pyautogui.click(3884, 14)
+pyautogui.click(3884, 14)
 time.sleep(2)
 pyautogui.write('safari')
 pyautogui.press('enter')
@@ -41,15 +41,39 @@ time.sleep(3)
 # Passo 3: Importar a base de dados
 tabela = pandas.read_csv('produtos.csv') # se o arquivo estiver em outro local, é preciso passar o 'endereço completo'
 
-# Passo 4: Cadastrar 1 produto safari
+# Passo 4/5: Cadastrar produtos
+for linha in tabela.index:
+    # posição do primeiro campo do formulário de cadastro: x=1992, y=305
+    pyautogui.click(1992, 305)
 
+    codigo = tabela.loc[linha, 'codigo']
+    pyautogui.write(codigo)
+    pyautogui.press('tab')
 
+    marca = tabela.loc[linha, 'marca']
+    pyautogui.write(marca)
+    pyautogui.press('tab')
 
+    tipo = tabela.loc[linha, 'tipo']
+    pyautogui.write(tipo)
+    pyautogui.press('tab')
 
+    categoria = str(tabela.loc[linha, 'categoria']) # para formatar o número da tabela em string
+    pyautogui.write(categoria)
+    pyautogui.press('tab')
 
+    preco_unitario = str(tabela.loc[linha, 'preco_unitario'])
+    pyautogui.write(preco_unitario)
+    pyautogui.press('tab')
 
+    custo = str(tabela.loc[linha, 'custo'])
+    pyautogui.write(custo)
+    pyautogui.press('tab')
 
-
-
-
-
+    obs = str(tabela.loc[linha, 'obs'])
+    if obs != "nan":
+        pyautogui.write(obs)
+    
+    # pyautogui.press('tab')
+    pyautogui.press('enter')
+    pyautogui.scroll(10000) # para voltar ao topo da página
